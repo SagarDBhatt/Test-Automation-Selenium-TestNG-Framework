@@ -6,4 +6,5 @@ This is my hobby project to generate automation scripts using Java Selenium web-
 ** Generated the methods 
 1. Access the Excel file and open the sheet. 
 2. Get the lastRowCount, LastPhysicalRowCount. 
+3. Iterate each row and column. Get the cell value. 
 
