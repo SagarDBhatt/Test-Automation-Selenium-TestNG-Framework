@@ -1,0 +1,68 @@
+*******************************************
+                ONSJHJSA
+*******************************************
+
+WORKFLOW:
+1. To access the Excel file, need dependencies for Apache POI and XSSFWorkbook
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+** Second dependency is required for XSSFWorkbook.
+    -> MS Office 2013 or later version generates the Excel file with .XLSX extention. To access the file with ".XLSX" ext, XSSFWorkbook and XSSFSheet classes are needed.
+
+2. Open the Excel file using XFFSWorkbook class. Access the worksheet by using XSSFSheet class.
+
+    XSSFWorkbook workbook = new XSSFWorkbook("PATH OF EXCEL FILE");
+    XSSFSheet sheet = new XSSFSheet("SHEET NAME");  // EITHER provide sheet name or sheet index based on the method type.
+
+3. Various utility methods.
+
+    sheet.getLastRowNum()); ==> Last Row count in the worksheet. NOTE: Index starts with 0.
+    sheet.getPhysicalNumberOfRows()); ==> Actual count of the rows. Index starts with 1.
+
+4. Iterate the Rows and Columns to fetch the cell value.
+-> For loop to iterate till the "Sheet.getLastRowNum()".
+
+        for (int i=0; i <= sheet.getLastRowNum(); i++){
+            Row r = sheet.getRow(i);
+
+            for (int j = 0; j < r.getLastCellNum(); j++){
+                System.out.println(formatter.formatCellValue(getCellData(i,j)));
+            }
+        }
+
+NOTE:
+-> There is NOT any method Similar to getLastRowNum() to get the last Column count. The
+final value of the column for a given Row can generate via,
+
+    Row row = sheet.getRow(rowCount);
+    row.getLastCellNum() => Provides the last cellNumber.
+
+5. Get the Cell Value.
+
+    Cell cell = row.getCell(columnNumber);
+
+NOTE:
+The cell value usually returns the String. If the cell value is Integer then it throws an exception
+that String value can NOT be parsed/converted into integer.
+
+SOLUTION: Apache POI Java Documentation provides a solution by using the DataFormatter class.
+
+    DataFormatter formatter = new DataFormatter();
+    formatter.formatCellValue(cell);
+
+-> DataFormatter class object converts the cell value to String. NOTE that the integer value of cell
+will convert into string of numbers.
+
+
