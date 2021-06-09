@@ -19,12 +19,12 @@ WORKFLOW:
         </dependency>
 
 ** Second dependency is required for XSSFWorkbook.
-    -> MS Office 2013 or later version generates the Excel file with .XLSX extention. To access the file with ".XLSX" ext, XSSFWorkbook and XSSFSheet classes are needed.
+    -> MS Office 2013 or later version generates the Excel file with .XLSX extension. To access the file with ".XLSX" ext, XSSFWorkbook and XSSFSheet classes are needed.
 
 2. Open the Excel file using XFFSWorkbook class. Access the worksheet by using XSSFSheet class.
 
     XSSFWorkbook workbook = new XSSFWorkbook("PATH OF EXCEL FILE");
-    XSSFSheet sheet = new XSSFSheet("SHEET NAME");  // EITHER provide sheet name or sheet index based on the method type.
+    XSSFSheet sheet = workbook.getSheet("SHEET NAME");  // EITHER provide sheet name or sheet index based on the method type.
 
 3. Various utility methods.
 
