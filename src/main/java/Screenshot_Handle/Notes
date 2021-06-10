@@ -1,0 +1,26 @@
+*****************************************
+            ONSJHJSA
+*****************************************
+
+WORKFLOW on Screenshot
+
+1. Need - Screenshots are required for bug analysis. Taking screenshot of various screens during the automation
+execution is useful in bug analysis.
+
+2. 'TakeScreenShot' class is used for taking the screen print.
+-> Create the WebDriver object. Cast into TakeScreenShot class.
+
+    WebDriver driver;
+    WebDriverManager.chromeDriver().setup();
+    driver = new ChromeDriver()
+
+    TakeScreenshot scrshot = (TakeScreenshot) driver;
+
+3. Call getScreenshotAs method to define the output file type.
+
+    File srcFile = scrshot.getScreenshotAs(OutputType.FILE);
+
+4. Use FileUtils class to copy all the screenshots into desired destination.
+
+    File destFile = new File(FILEPATH);
+    FileUtils.copyFile(srcFile,outputFile);
