@@ -8,3 +8,8 @@ This is my hobby project to generate automation scripts using Java Selenium web-
 2. Get the lastRowCount, LastPhysicalRowCount. 
 3. Iterate each row and column. Get the cell value. 
 
+
+**********************************
+
+WORKFLOW on taking screenshot during automation test execution implemented. 
+ScreenShot feature added. Notes updated. 
