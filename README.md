@@ -13,3 +13,8 @@ This is my hobby project to generate automation scripts using Java Selenium web-
 
 WORKFLOW on taking screenshot during automation test execution implemented. 
 ScreenShot feature added. Notes updated. 
+
+**************************************
+
+Workflow till OKTA login page. Fetched value from Excel workbook to provide the credentials at runtime. 
+Manage pop ups by switching parent and child windows.
