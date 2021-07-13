@@ -25,3 +25,5 @@ Select profile and search for site id. New window appears with Site id details. 
 Go to General Details tab and select RF Antenna sub section. 
 
 ****************************************
+
+Used RestAssured.io framework to fetch the Rest API via Selenium. 
