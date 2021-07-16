@@ -27,3 +27,13 @@ Go to General Details tab and select RF Antenna sub section.
 ****************************************
 
 Used RestAssured.io framework to fetch the Rest API via Selenium. Provide API key, header information and fetch the JSON payload. Used Extract method to fetch particular JSON element by using the path variable.  
+
+****************************************
+
+Code commit: First succeessful comparison of TX_IDs_FROM_UI and TX_IDS_FROM_API. 
+
+****************************************
+
+
+
+
