@@ -34,6 +34,7 @@ Code commit: First succeessful comparison of TX_IDs_FROM_UI and TX_IDS_FROM_API.
 
 ****************************************
 
+Create a function for scalable and flexible API automation. Passed value of column webElement and retrieve the value
 
 
 
