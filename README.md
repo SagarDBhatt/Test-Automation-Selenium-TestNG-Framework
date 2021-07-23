@@ -40,6 +40,10 @@ Create a function for scalable and flexible API automation. Passed value of colu
 
 Iterate through columns and fetch the values till the visibility. 
 
+****************************************
+
+Issue occured when ScrollToElement() horizontally. The data hides/disappeared. 
+
 
 
 
