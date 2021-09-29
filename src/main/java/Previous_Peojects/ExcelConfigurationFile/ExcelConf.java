@@ -1,9 +1,8 @@
-package ExcelUtils.ExcelConfigurationFile;
+package Previous_Peojects.ExcelConfigurationFile;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -20,7 +19,7 @@ public class ExcelConf {
      */
     public static void getRowCount() throws IOException {
 //        System.out.println("Inside the method");
-        workbook = new XSSFWorkbook("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework\\src\\main\\java\\ExcelUtils\\ExcelConfigurationFile\\confData.xlsx");
+        workbook = new XSSFWorkbook("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework\\src\\main\\java\\Previous_Peojects.ExcelUtils\\ExcelConfigurationFile\\confData.xlsx");
         sheet = workbook.getSheet("Sheet1");
 
         /**

@@ -1,6 +1,6 @@
-package Screenshot_Handle;
+package Previous_Peojects.Screenshot_Handle;
 
-import Driver_Utility.ChromeDriverUtility;
+import Previous_Peojects.Driver_Utility.ChromeDriverUtility;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -30,7 +30,7 @@ public class Screenshot_Utility {
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
 
-        File outputFile = new File("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework\\src\\main\\java\\Screenshot_Handle\\"+fileName+".png");
+        File outputFile = new File("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework\\src\\main\\java\\Previous_Peojects.Screenshot_Handle\\"+fileName+".png");
 
         FileUtils.copyFile(srcFile,outputFile);
 

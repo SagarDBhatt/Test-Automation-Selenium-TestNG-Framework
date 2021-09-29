@@ -1,16 +1,10 @@
-package NXO_TC_Demo;
+package Previous_Peojects.NXO_TC_Demo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import javax.swing.*;
@@ -35,7 +29,7 @@ public class BOM_ID_Validation {
 
         File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
         File destFile = new File("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework\\" +
-                "src\\main\\java\\NXO_TC_Demo\\ScreenShots\\"+fileName+".png");
+                "src\\main\\java\\Previous_Peojects.NXO_TC_Demo\\ScreenShots\\"+fileName+".png");
         FileUtils.copyFile(srcFile,destFile);
     }
 
@@ -78,7 +72,7 @@ public class BOM_ID_Validation {
 //         * Access Excel workbook and fetch UserName & PWD. Standard practice to fetch secret values from Conf file rather than hard-coding.
 //         */
 //        XSSFWorkbook workbook = new XSSFWorkbook("C:\\Users\\sagar.bhatt\\IdeaProjects\\Test-Automation-Selenium-TestNG-Framework" +
-//                "\\src\\main\\java\\NXO_TC_Demo\\Configuration File\\Creds.xlsx");
+//                "\\src\\main\\java\\Previous_Peojects.NXO_TC_Demo\\Configuration File\\Creds.xlsx");
 //        XSSFSheet sheet = workbook.getSheetAt(0);
 //
 //        Row row = sheet.getRow(1);

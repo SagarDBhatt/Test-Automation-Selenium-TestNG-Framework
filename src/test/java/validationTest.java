@@ -1,7 +1,6 @@
+import Previous_Peojects.validation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class validationTest {
 
