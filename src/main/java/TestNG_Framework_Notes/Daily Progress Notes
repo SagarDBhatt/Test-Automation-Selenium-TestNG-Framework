@@ -1,0 +1,9 @@
+**** ONSJHJSA ****
+******************
+
+September 30th 2021:
+
+1. Convert the existing project into TestNG framework.
+    * Add TestNG framework maven dependency.
+
+2. Create a folder structure for Test Scripts, WebOperations, ObjectMap for PageFactory.
