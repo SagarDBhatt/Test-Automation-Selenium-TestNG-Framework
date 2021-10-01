@@ -7,3 +7,10 @@ September 30th 2021:
     * Add TestNG framework maven dependency.
 
 2. Create a folder structure for Test Scripts, WebOperations, ObjectMap for PageFactory.
+
+3. Add Log4j framework support to the project.
+    * Apache Log4j is logging framework to log the activities.
+    * Add, log4j-api and log4j-core maven dependency.
+
+    * Create log4j2.xml configuration file. Sample XML - https://howtodoinjava.com/log4j2/log4j2-xml-configuration-example/
+    * IMP: Create a Directory at Main/Resources. Add log4j2.xml file into this directory.

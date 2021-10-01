@@ -1,0 +1,4 @@
+[INFO ] 2021-10-01 16:45:02.245 [main] TestScripts - ChromeDriver created!!
+[INFO ] 2021-10-01 16:45:03.744 [main] TestScripts - Google Website opened!
+[ERROR] 2021-10-01 16:45:03.745 [main] TestScripts - Error message
+[FATAL] 2021-10-01 16:45:03.745 [main] TestScripts - Fatal message
